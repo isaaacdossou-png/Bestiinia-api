@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     }
     let url, body;
     if (action === 'create_video') {
-      url  = 'https://api.replicate.com/v1/models/minimax/video-01/predictions';
+      url  = 'https://api.replicate.com/v1/models/minimax/video-01-live2/predictions';
       body = { input: { prompt, prompt_optimizer: true } };
     } else if (action === 'create_image') {
       url  = 'https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions';
